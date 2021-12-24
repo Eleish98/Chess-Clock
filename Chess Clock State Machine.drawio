@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T13:49:39.410Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="TXUsbB-rkp8wYby1at2i" version="16.0.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-12-24T13:50:28.080Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="KrAdPC_pzLYJxm8K5s2E" version="16.0.3" type="github" pages="5">
   <diagram id="qlyhx09nTGPQ7Nj6pgr8" name="Chess Clock Main">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -103,7 +103,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CAfGnNDGaBbe-8M2Laei" name="State 1 (Stopped)">
-    <mxGraphModel dx="2844" dy="1524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="661" dy="354" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="4681" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="-txIwRFJLaiFTXK-DuSM-0" />
         <mxCell id="-txIwRFJLaiFTXK-DuSM-1" parent="-txIwRFJLaiFTXK-DuSM-0" />
@@ -785,8 +785,18 @@
         <mxCell id="9xQpvlUyXjEMPdXEcQBw-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="-txIwRFJLaiFTXK-DuSM-1" source="9xQpvlUyXjEMPdXEcQBw-7" target="9xQpvlUyXjEMPdXEcQBw-11">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="9xQpvlUyXjEMPdXEcQBw-23" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;" vertex="1" connectable="0" parent="9xQpvlUyXjEMPdXEcQBw-12">
+          <mxGeometry x="-0.6298" y="-3" relative="1" as="geometry">
+            <mxPoint y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="9xQpvlUyXjEMPdXEcQBw-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="-txIwRFJLaiFTXK-DuSM-1" source="9xQpvlUyXjEMPdXEcQBw-7" target="9xQpvlUyXjEMPdXEcQBw-13">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9xQpvlUyXjEMPdXEcQBw-22" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=17;" vertex="1" connectable="0" parent="9xQpvlUyXjEMPdXEcQBw-14">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint x="-28" as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="9xQpvlUyXjEMPdXEcQBw-7" value="Mode_Selector even?" style="rhombus;whiteSpace=wrap;html=1;fontSize=14;fontFamily=Verdana;rounded=1;" vertex="1" parent="-txIwRFJLaiFTXK-DuSM-1">
           <mxGeometry x="490" y="720" width="140" height="140" as="geometry" />
