@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-12-24T21:50:17.641Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="iRCY2xHb_i6u8XA0aq84" version="16.1.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-12-24T21:50:40.882Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36" etag="rIvLeyLknbYCYRUTbUt2" version="16.1.0" type="github" pages="4">
   <diagram id="qlyhx09nTGPQ7Nj6pgr8" name="Chess Clock Main">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -207,7 +207,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="HY7_CKtCBblN5GLZZvR7-33" value="&lt;span&gt;&lt;font style=&quot;font-size: 8px&quot;&gt;Decrement Mode_Selector&lt;/font&gt;&lt;/span&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" parent="PIRuApOx0XAMw-c04Ecl-1" vertex="1">
-          <mxGeometry x="82.5" y="404" width="74" height="30" as="geometry" />
+          <mxGeometry x="82.5" y="400" width="74" height="30" as="geometry" />
         </mxCell>
         <mxCell id="HY7_CKtCBblN5GLZZvR7-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="PIRuApOx0XAMw-c04Ecl-1" source="HY7_CKtCBblN5GLZZvR7-35" target="HY7_CKtCBblN5GLZZvR7-40" edge="1">
           <mxGeometry relative="1" as="geometry">
