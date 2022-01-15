@@ -1,0 +1,172 @@
+/************************************************/
+/*	Author		:		Mohamed G. ELeish		*/
+/*	Date		:		4 September 2021		*/
+/*	Version		:		V01						*/
+/************************************************/
+
+/************************************************/
+/************************************************/
+/*****					LOG					*****/
+/*	4/9/2021:	File Created					*/
+/************************************************/
+/************************************************/
+
+
+#ifndef RCC_CONFIG_H_INCLUDDED
+#define RCC_CONFIG_H_INCLUDDED
+
+/*	
+	Options:
+	RCC_CLOCK_HSI
+	RCC_CLOCK_PLL
+	RCC_CLOCK_HSE
+*/
+//Must Not Exceed 72 MHz
+#define RCC_SYSETEM_CLOCK	RCC_CLOCK_PLL
+
+#if RCC_SYSETEM_CLOCK == RCC_CLOCK_HSE
+/*
+	Options:
+	RCC_HSE_CRYSTAL
+	RCC_HSE_EXTERNAL_SOURCE
+*/
+#define RCC_HSE_SOURCE	RCC_HSE_CRYSTAL
+
+//4 -> 16 MHz
+#define RCC_HSE_VALUE	8000000UL
+
+#endif 
+
+
+#if RCC_SYSETEM_CLOCK == RCC_CLOCK_PLL
+
+/*	
+	Options:
+	RCC_HSE
+	RCC_HSE_DIV_2
+	RCC_HSI_DIV_2
+*/
+#define RCC_PLL_CLOCK_SOURCE	RCC_HSE
+
+#if RCC_PLL_CLOCK_SOURCE == RCC_HSE || RCC_PLL_CLOCK_SOURCE == RCC_HSE_DIV_2
+/*
+	Options:
+	RCC_HSE_CRYSTAL
+	RCC_HSE_EXTERNAL_SOURCE
+*/
+#define RCC_HSE_SOURCE	RCC_HSE_CRYSTAL
+
+#define RCC_HSE_VALUE	8000000UL
+
+#endif
+
+/*	
+	Options:
+	RCC_PLL_MULT_2
+	RCC_PLL_MULT_3
+	RCC_PLL_MULT_4
+	RCC_PLL_MULT_5
+	RCC_PLL_MULT_6
+	RCC_PLL_MULT_7
+	RCC_PLL_MULT_8
+	RCC_PLL_MULT_9
+	RCC_PLL_MULT_10
+	RCC_PLL_MULT_11
+	RCC_PLL_MULT_12
+	RCC_PLL_MULT_13
+	RCC_PLL_MULT_14
+	RCC_PLL_MULT_15
+	RCC_PLL_MULT_16
+*/
+#define RCC_PLL_MULIPLIER	RCC_PLL_MULT_4
+
+#endif
+
+/*
+ 	 Options:
+ 	 RCC_ENABLED
+ 	 RCC_DISABLED
+ */
+#define ECC_RTC_ENABLED			RCC_DISABLE
+#if ECC_RTC_ENABLED == RCC_ENABLE
+
+/*	
+	Options:
+	RCC_HSE_DIV_128
+	RCC_LSE_32_768KHZ
+	RCC_LSI_40KHZ
+*/
+#define RCC_RTC_CLOCK_SOURCE	RCC_LSE_32_768KHZ
+
+#if RCC_RTC_CLOCK_SOURCE == RCC_LSE_32_768KHZ
+/*
+ 	 Options:
+ 	 RCC_LSE_CRYSTAL
+ 	 RCC_LSE_EXTERNAL_SOURCE
+ */
+
+#define RCC_LSE_SOURCE	RCC_LSE_CRYSTAL
+
+
+#endif
+#endif
+
+
+/*	
+	Options:
+	RCC_PLL_CLOCLK_DIV_1
+	RCC_PLL_CLOCLK_1_5
+*/
+#define RCC_USB_PRESCALAR	RCC_PLL_CLOCLK_1_5
+
+/*	
+	Options:
+	RCC_SYSTEM_CLCOCK_DIV_1
+	RCC_SYSTEM_CLCOCK_DIV_2
+	RCC_SYSTEM_CLCOCK_DIV_4
+	RCC_SYSTEM_CLCOCK_DIV_8
+	RCC_SYSTEM_CLCOCK_DIV_16
+	RCC_SYSTEM_CLCOCK_DIV_64
+	RCC_SYSTEM_CLCOCK_DIV_128
+	RCC_SYSTEM_CLCOCK_DIV_256
+	RCC_SYSTEM_CLCOCK_DIV_512
+*/
+
+
+#define RCC_AHB_PRESCALAR	RCC_SYSTEM_CLCOCK_DIV_1
+
+/*	
+	Options:
+	RCC_AHB_CLOCK_DIV_1
+	RCC_AHB_CLOCK_DIV_2
+	RCC_AHB_CLOCK_DIV_4
+	RCC_AHB_CLOCK_DIV_8
+	RCC_AHB_CLOCK_DIV_16
+*/
+
+#define RCC_APB1_PRESCALAR	RCC_AHB_CLOCK_DIV_2
+
+/*	
+	Options:
+	RCC_AHB_CLOCK_DIV_1
+	RCC_AHB_CLOCK_DIV_2
+	RCC_AHB_CLOCK_DIV_4
+	RCC_AHB_CLOCK_DIV_8
+	RCC_AHB_CLOCK_DIV_16
+*/
+
+#define RCC_APB2_PRESCALAR	RCC_AHB_CLOCK_DIV_1
+
+/*	
+	Options:
+	RCC_APB2_CLOCK_DIV_2
+	RCC_APB2_CLOCK_DIV_4
+	RCC_APB2_CLOCK_DIV_6
+	RCC_APB2_CLOCK_DIV_8
+*/
+#define RCC_ADC_PRESCALAR	RCC_APB2_CLOCK_DIV_6
+
+
+
+#endif
+
