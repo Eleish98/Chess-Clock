@@ -10,7 +10,8 @@
 
 void PENCODERChanged(void);
 
-void (*PENCODERCallBack)(EncoderChange_t);
+void (*PENCODERChangeCallBack)(EncoderChange_t);
 
+void (*PENCODERSwitchCallBack)(void);
 
 #endif /* 3__HAL_04__ROTARY_ENCODER_ENCODER_PRIVATE_H_ */
