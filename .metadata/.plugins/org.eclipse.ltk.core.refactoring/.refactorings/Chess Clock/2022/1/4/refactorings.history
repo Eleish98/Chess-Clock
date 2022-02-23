@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Chess Clock/Drivers/3- HAL/04- Incremental Encoder&apos; to &apos;04- Rotary Encoder&apos;" description="Rename resource &apos;04- Incremental Encoder&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Drivers/3- HAL/04- Incremental Encoder" name="04- Rotary Encoder" stamp="1642450250877" updateReferences="true"/>
+</session>
