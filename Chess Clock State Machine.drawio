@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-09T22:03:09.046Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36" etag="c3k8VqyQyrQwf4IwqvzL" version="17.4.1" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-06-01T18:58:41.627Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36" etag="JTxqbbUOnb5rzjNkUWLf" version="18.1.3" type="github" pages="6">
   <diagram id="qlyhx09nTGPQ7Nj6pgr8" name="Chess Clock Main">
     <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -103,7 +103,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mipKjc0XR0Q0YLznO_Gw" name="1. Stopped">
-    <mxGraphModel dx="981" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="PIRuApOx0XAMw-c04Ecl-0" />
         <mxCell id="PIRuApOx0XAMw-c04Ecl-1" parent="PIRuApOx0XAMw-c04Ecl-0" />
@@ -244,7 +244,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="1bjegk5hiHravdQXMyaa" name="2. Saved Mode Selected">
-    <mxGraphModel dx="790" dy="423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="677" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="sg33YMeweZaXngMHBPWw-0" />
         <mxCell id="sg33YMeweZaXngMHBPWw-1" parent="sg33YMeweZaXngMHBPWw-0" />
@@ -447,33 +447,29 @@
         <mxCell id="Jt4vHP2ZxfIDGIbgNsc1-10" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Set Mode_Select_Flag&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" parent="sg33YMeweZaXngMHBPWw-1" vertex="1">
           <mxGeometry x="393.01" y="760" width="80" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" parent="sg33YMeweZaXngMHBPWw-1" source="Jt4vHP2ZxfIDGIbgNsc1-11" edge="1">
+        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.54;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" parent="sg33YMeweZaXngMHBPWw-1" source="wbRJ0WpXXBsX-XDYHSJ2-3" target="6HM3x42PQwHuZhNURNPo-15" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="297" y="990" as="targetPoint" />
+            <mxPoint x="297" y="765" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="Jt4vHP2ZxfIDGIbgNsc1-11" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Increment Cursor if &amp;lt; 12&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" parent="sg33YMeweZaXngMHBPWw-1" vertex="1">
-          <mxGeometry x="260" y="780" width="74" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=8;" parent="sg33YMeweZaXngMHBPWw-1" source="wbRJ0WpXXBsX-XDYHSJ2-3" target="Jt4vHP2ZxfIDGIbgNsc1-11" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-3" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Increment Saved_Mode_Selector&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" parent="sg33YMeweZaXngMHBPWw-1" vertex="1">
           <mxGeometry x="252" y="720" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=8;" parent="sg33YMeweZaXngMHBPWw-1" source="wbRJ0WpXXBsX-XDYHSJ2-4" target="wbRJ0WpXXBsX-XDYHSJ2-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=8;" parent="sg33YMeweZaXngMHBPWw-1" source="wbRJ0WpXXBsX-XDYHSJ2-4" target="6HM3x42PQwHuZhNURNPo-15" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="113" y="770" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-4" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Decrement Saved_Mode_Selector&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" parent="sg33YMeweZaXngMHBPWw-1" vertex="1">
           <mxGeometry x="66" y="720" width="94" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" parent="sg33YMeweZaXngMHBPWw-1" source="wbRJ0WpXXBsX-XDYHSJ2-5" edge="1">
+        <mxCell id="6HM3x42PQwHuZhNURNPo-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="sg33YMeweZaXngMHBPWw-1" source="6HM3x42PQwHuZhNURNPo-15">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="113" y="990" as="targetPoint" />
+            <mxPoint x="205" y="990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wbRJ0WpXXBsX-XDYHSJ2-5" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Decrement Cursor if &amp;gt; 0&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" parent="sg33YMeweZaXngMHBPWw-1" vertex="1">
-          <mxGeometry x="76" y="780" width="74" height="30" as="geometry" />
+        <mxCell id="6HM3x42PQwHuZhNURNPo-15" value="&lt;font style=&quot;font-size: 8px&quot;&gt;Update Cursor with value Selector%12&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=8;fontFamily=Verdana;rounded=0;spacing=0;" vertex="1" parent="sg33YMeweZaXngMHBPWw-1">
+          <mxGeometry x="160" y="810" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
