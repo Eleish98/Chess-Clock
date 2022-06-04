@@ -28,6 +28,10 @@ void MSTK_voidInit(STK_ClockSource_t Copy_ClockSource, u32 Copy_u32AHBClockFrequ
 
 void MSTK_voidStop(void);
 
+void MSTK_voidStartTimeMeasure(void);
+
+u32 MSTK_u32GetMeasuredUS(void);
+
 void MSTK_voidSetBusyWaitUS(u32 Copy_u32MicroSec);
 
 void MSTK_voidSetPeriodicInterval(u32 Copy_u32MicroSec, void(*CallBack)(void));

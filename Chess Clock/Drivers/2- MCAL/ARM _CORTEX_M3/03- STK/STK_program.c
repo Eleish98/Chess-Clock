@@ -33,6 +33,18 @@ void MSTK_voidStop(void){
 	CLR_BIT(STK_REG->CTRL,1);
 }
 
+void MSTK_voidStartTimeMeasure(void){
+
+	STK_REG->LOAD = 0xffffff;
+	SET_BIT(STK_REG->CTRL, 0);
+
+}
+
+u32 MSTK_u32GetMeasuredUS(void){
+	CLR_BIT(STK_REG->CTRL, 0);
+	return (STK_REG->LOAD - STK_REG->VAL + 1)/PSTK_u32TicksPerMicroSeconds;
+}
+
 void MSTK_voidSetBusyWaitUS(u32 Copy_u32MicroSec){
 	STK_REG->LOAD = PSTK_u32TicksPerMicroSeconds*Copy_u32MicroSec;
 	SET_BIT(STK_REG->CTRL, 0);

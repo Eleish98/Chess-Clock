@@ -150,7 +150,7 @@ void EXTI9_5_IRQHandler(void){
 	
 }
 
-void EXTI10_15IRQHandler(void){
+void EXTI15_10_IRQHandler(void){
 	if(CHK_BIT(EXTI_REG->PR,10)){
 		if(PEXTI_CallBacks[10] != 0)
 			PEXTI_CallBacks[10]();

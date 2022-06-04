@@ -247,6 +247,33 @@ u32 MRCC_u32GetBusClock(RCC_BUS_t Copy_Bus){
 	return Local_u32BusClock;
 }
 
+/*	Returns Selected Timer Clock Frequency in Hz	*/
+u32 MRCC_u32GetTimerFrequency(RCC_Timer_t Copy_Timer){
+
+	u32 Local_u32TimerFrequency = 0;
+	u32 Local_u32BusClock = 0;
+
+	if(Copy_Timer > RCC_TIMER_14)
+		Local_u32TimerFrequency = 0;
+	else if(Copy_Timer == RCC_TIMER_1 || (Copy_Timer >= RCC_TIMER_8 && Copy_Timer <= RCC_TIMER_11)){
+		Local_u32BusClock = MRCC_u32GetBusClock(RCC_BUS_APB2);
+		if(((RCC_REG->CFGR >> 4) & 7) > 3)
+			Local_u32TimerFrequency = Local_u32BusClock * 2;
+		else
+			Local_u32TimerFrequency = Local_u32BusClock;
+	}
+	else{
+		Local_u32BusClock = MRCC_u32GetBusClock(RCC_BUS_APB1);
+		if(((RCC_REG->CFGR >> 8) & 7) > 3)
+			Local_u32TimerFrequency = Local_u32BusClock * 2;
+		else
+			Local_u32TimerFrequency = Local_u32BusClock;
+	}
+
+	return Local_u32TimerFrequency;
+
+}
+
 
 void RCC_IRQHandler(void){
 	if(CHK_BIT(RCC_REG->CIR,RCC_INTERRUPT_LSI_READY)){

@@ -115,6 +115,23 @@ typedef enum{
 	RCC_BUS_APB2
 }RCC_BUS_t;
 
+typedef enum{
+	RCC_TIMER_1,
+	RCC_TIMER_2,
+	RCC_TIMER_3,
+	RCC_TIMER_4,
+	RCC_TIMER_5,
+	RCC_TIMER_6,
+	RCC_TIMER_7,
+	RCC_TIMER_8,
+	RCC_TIMER_9,
+	RCC_TIMER_10,
+	RCC_TIMER_11,
+	RCC_TIMER_12,
+	RCC_TIMER_13,
+	RCC_TIMER_14,
+
+}RCC_Timer_t;
 
 /*	Initializes the Clock Sources configured in configuration file*/
 void MRCC_voidInitClock(void);
@@ -142,6 +159,8 @@ void MRCC_voidClearInterrupt(RCC_Interrupt_t Interrupt);
 u32 MRCC_u32GetSystemClock(void);
 /*	Returns Selected Bus Clock in Hz	*/
 u32 MRCC_u32GetBusClock(RCC_BUS_t Copy_Bus);
+/*	Returns Selected Timer Clock Frequency in Hz	*/
+u32 MRCC_u32GetTimerFrequency(RCC_Timer_t Copy_Timer);
 
 #endif
 

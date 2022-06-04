@@ -113,7 +113,7 @@ void (*PRCC_voidCallBacks[5])(void)={0,0,0,0,0};
 
 /*	Prescalars for AHB, APB1 and APB2	*/
 u16 PRCC_u16AHBPrescalars[9] = {1,2,4,8,16,64,128,256,512};
-u16 PRCC_u16APBPescalars[4] = {2,4,8,16};
+u16 PRCC_u16APBPescalars[5] = {1,2,4,8,16};
 
 #endif
 

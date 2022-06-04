@@ -2,6 +2,8 @@
 
 #include "1- LIB/STD_TYPES.h"
 #include "1- LIB/BIT_MATH.h"
+#include "1- LIB/Delay.h"
+
 
 #include "2- MCAL/ST/05- GPIO/GPIO_interface.h"
 #include "2- MCAL/ARM _CORTEX_M3/03- STK/STK_interface.h"
@@ -30,11 +32,11 @@ void PLCD_voidWrite4Bits(LCD_t* LCD, u8 HalfByte){
 
 void PLCD_voidEnable(LCD_t* LCD){
 	MGPIO_voidSetPin(LCD->ControlPorts[2],LCD->ControlPins[2]);
-	MSTK_voidSetBusyWaitUS(2000);
+	LDelay_voidSetBusyWait(2);
 	//MCLOCK_voidDelayMS(2);
 
 	MGPIO_voidClearPin(LCD->ControlPorts[2],LCD->ControlPins[2]);
-	MSTK_voidSetBusyWaitUS(2000);
+	LDelay_voidSetBusyWait(2);
 	//MCLOCK_voidDelayMS(2);
 
 }
@@ -103,7 +105,7 @@ void HLCD_voidInit(LCD_t* LCD){
 	for(u8 i = 0; i< Local_u8Pins; i++){
 		MGPIO_voidSetPinDirection(LCD->DataPorts[i],LCD->DataPins[i],GPIO_DIR_OUTPUT_PUSH_PULL);
 	}
-	MSTK_voidSetBusyWaitUS(50000);
+	LDelay_voidSetBusyWait(50);
 	//MCLOCK_voidDelayMS(50);
 
 	if(Local_u8DataLine == 0)
@@ -111,17 +113,21 @@ void HLCD_voidInit(LCD_t* LCD){
 	
 	PLCD_voidWriteCommand(LCD,LCD_INSTRUCTION_FUNCTION_SET(Local_u8DataLine,Local_u8Lines,0));
 	
-	MSTK_voidSetBusyWaitUS(1000);
+	LDelay_voidSetBusyWait(1);
 	//MCLOCK_voidDelayMS(1);
 	PLCD_voidWriteCommand(LCD,LCD_INSTRUCTION_DISP_ON_OFF_CTRL(1,0,0));
 	
-	MSTK_voidSetBusyWaitUS(1000);
+	LDelay_voidSetBusyWait(1);
 	//MCLOCK_voidDelayMS(1);
 	PLCD_voidWriteCommand(LCD,LCD_INSTRUCTION_CLR_DISPLAY);
 	
-	MSTK_voidSetBusyWaitUS(5000);
+	LDelay_voidSetBusyWait(5);
 	//MCLOCK_voidDelayMS(5);
 	PLCD_voidWriteCommand(LCD,LCD_INSTRUCTION_ENTRY_MODE_SET(1,0));
+
+	LDelay_voidSetBusyWait(50);
+
+	HLCD_voidClearScreen(LCD);
 }
 
 //Writes a single char to LCD

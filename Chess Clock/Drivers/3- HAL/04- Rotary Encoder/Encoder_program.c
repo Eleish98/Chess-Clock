@@ -57,23 +57,35 @@ void HENCODER_voidInit(void){
 	else if (ENCODER_SWITCH_PIN <= 15)
 		MNVIC_voidEnableInterrupt(NVIC_INTERRUPT_EXTI10_15);
 
+
+
+
+
 }
 
 void HENCODER_voidSetChangeCallBack(void (*ChangeCallBack)(EncoderChange_t)){
 	PENCODERChangeCallBack = ChangeCallBack;
 }
 
-void HENCODER_voidSetSwitchCallBack(void (SwitchCallBack)(void)){
+void HENCODER_voidSetSwitchCallBack(void (*SwitchCallBack)(void)){
 	PENCODERSwitchCallBack = SwitchCallBack;
 }
 
 void HENCODER_voidEnableEncoder(void){
 
 	MEXTI_voidEnableInterrupt(ENCODER_CHANNEL_A_PIN);
+	MEXTI_voidEnableInterrupt(ENCODER_SWITCH_PIN);
 }
 
 void HENCODER_voidDisableEncoder(void){
 	MEXTI_voidDisableInterrupt(ENCODER_CHANNEL_A_PIN);
+}
+
+EncoderSwitchState_t HENCODER_enuGetSwitchState(void){
+	EncoderSwitchState_t SwitchState = ENCODER_SWITCH_RELEASED;
+	if(MGPIO_u8GetPinValue(ENCODER_SWITCH_PORT,ENCODER_SWITCH_PIN) == 0)
+		SwitchState = ENCODER_SWITCH_PRESSED;
+	return SwitchState;
 }
 
 void PENCODERChanged(void){
